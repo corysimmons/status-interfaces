@@ -8,7 +8,7 @@ Importable HTTP Status interface objects.
 ## Usage
 
 ```js
-import { statusOk, statusNotFound } from 'status-interfaces
+import { statusOk, statusNotFound } from 'status-interfaces'
 
 router.get(`/:id`, ctx => {
   const record = find(dataSource, o => o.id === Number(ctx.params.id))
