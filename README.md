@@ -1,5 +1,7 @@
 # status-interfaces
-Importable HTTP Status interface objects.
+Importable [HTTP Status interface objects](https://github.com/carrot/restful-api-spec#base-interface).
+
+Works well with `Object.assign()`.
 
 ## Install
 
