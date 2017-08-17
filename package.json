@@ -1,6 +1,6 @@
 {
   "name": "status-interfaces",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "babel -w src -d dist"
