@@ -1,6 +1,7 @@
 {
   "name": "status-interfaces",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "repository": "corysimmons/status-interfaces",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "babel -w src -d dist"
