@@ -6,6 +6,10 @@ Function for setting [HTTP Status interfaces](https://github.com/carrot/restful-
 
 `npm i status-interfaces`
 
+## API
+
+`si(code, [{content}], [[error objects]])`
+
 ## Usage
 
 ```js
@@ -19,7 +23,12 @@ router.get(`/:id`, ctx => {
       record
     })
   } else {
-    ctx.body = si(404)
+    ctx.body = si(404, undefined, [
+      {
+        code: 1,
+        text: `Ya dun goofed...`
+      }
+    ])
   }
 })
 ```

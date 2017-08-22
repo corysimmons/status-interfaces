@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = (code, content) => {
+exports.default = (code, content, error_details) => {
   let success = false;
 
   if (code >= 200 && code < 300 || code === 304) {
@@ -342,6 +342,8 @@ exports.default = (code, content) => {
       };
       break;
   }
+
+  baseInterface.error_details = error_details;
 
   return Object.assign(baseInterface, { content });
 };
