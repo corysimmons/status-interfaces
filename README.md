@@ -16,8 +16,8 @@ router.get(`/:id`, ctx => {
   const record = find(dataSource, o => o.id === Number(ctx.params.id))
 
   if (record) {
-    ctx.body = Object.assign(si(200), {
-      content: record
+    ctx.body = Object.assign(si(200, {
+      record
     })
   } else {
     ctx.body = si(404)
