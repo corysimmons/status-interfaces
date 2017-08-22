@@ -1,7 +1,6 @@
 # status-interfaces
-Importable [HTTP Status interface objects](https://github.com/carrot/restful-api-spec#base-interface).
 
-Works well with `Object.assign()`.
+Function for setting [HTTP Status interfaces](https://github.com/carrot/restful-api-spec#base-interface) and an object for `content` quickly.
 
 ## Install
 
