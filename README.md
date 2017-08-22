@@ -10,17 +10,17 @@ Works well with `Object.assign()`.
 ## Usage
 
 ```js
-import { statusOk, statusNotFound } from 'status-interfaces'
+import si from 'status-interfaces'
 
 router.get(`/:id`, ctx => {
   const record = find(dataSource, o => o.id === Number(ctx.params.id))
 
   if (record) {
-    ctx.body = Object.assign(statusOk, {
+    ctx.body = Object.assign(si(200), {
       content: record
     })
   } else {
-    ctx.body = statusNotFound
+    ctx.body = si(404)
   }
 })
 ```

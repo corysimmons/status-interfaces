@@ -1,6 +1,6 @@
 {
   "name": "status-interfaces",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "repository": "corysimmons/status-interfaces",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,11 +8,14 @@
   },
   "babel": {
     "presets": [
-      ["env", {
-        "targets": {
-          "node": "8"
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8"
+          }
         }
-      }]
+      ]
     ]
   },
   "devDependencies": {
