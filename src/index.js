@@ -339,5 +339,5 @@ export default (code, content, error_details) => {
 
   baseInterface.error_details = error_details
 
-  return Object.assign(baseInterface, { content })
+  return Object.assign({ meta: baseInterface }, { content })
 }
