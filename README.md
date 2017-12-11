@@ -1,5 +1,7 @@
 # status-interfaces
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/corysimmons/status-interfaces.svg)](https://greenkeeper.io/)
+
 Function for setting [HTTP Status interfaces](https://github.com/carrot/restful-api-spec#base-interface) and an object for `content` quickly.
 
 > *Note:* Metadata is wrapped in `meta` obj.
